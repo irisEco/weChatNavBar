@@ -1,0 +1,18 @@
+<view wx:if="{{model == 'iPhone X'}}">
+  <!-- 自定义导航栏高度 -->
+  <view class="navbar" style='height:{{navH}}px;line-height:{{navH+45}}px'>
+    <!-- 返回按钮 -->
+    <image class="img" bindtap='navback' src="../images/back.png" mode="aspectFit" style="margin-top:{{(navH+20)/2}}px" />
+    <view class='navbar-title'>
+      {{pageName}}
+    </view>
+  </view>
+</view>
+<view wx:else>
+  <view class="navbar" style='height:{{navH}}px;line-height:{{navH+25}}px'>
+    <image class="img" bindtap='navback' src="../images/back.png" mode="aspectFit" style="margin-top:{{(navH+10)/2}}px" />
+    <view class='navbar-title'>
+      {{pageName}}
+    </view>
+  </view>
+</view>
