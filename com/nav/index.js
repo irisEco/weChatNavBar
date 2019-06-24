@@ -33,10 +33,21 @@ Component({
     // 生命周期函数，可以为函数，或一个在methods段中定义的方法名
     attached: function() {
       console.log(App.globalData)
+      console.log('1')
+      console.log(Page.prototype.route);
+      const page = getCurrentPages();
+      let isHome= null
+      if (page[0].route == page[page.length-1].route){
+        isHome = true
+      }else{
+        isHome = false
+      }
       this.setData({
         navH: App.globalData.navHeight,
         statusHeight: App.globalData.statusHeight,
-        model: App.globalData.phoneModel
+        model: App.globalData.phoneModel,
+        isHome: isHome
+
       })
     }
   },
@@ -47,7 +58,6 @@ Component({
   methods: {
     //回退
     navback: function() {
-      console.log('hello')
       wx.navigateBack({
         delta: 1
       })
