@@ -1,7 +1,0 @@
-{
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "pullDownRefresh": "../../tools/pullDownRefresh/pullDownRefresh",
-    "navbar": "/com/nav/index"
-  }
-}

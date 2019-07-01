@@ -50,7 +50,7 @@ Component({
         model: App.globalData.phoneModel,
         isHome: isHome,
         refreshing: true,
-        img:"/com/images/back.png"
+        img:"/src/public/images/back.png"
 
       })
     }

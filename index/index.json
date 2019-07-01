@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "navbar":"../../tools/nav/index",
+    "pullDownRefresh": "../../tools/pullDownRefresh/pullDownRefresh"
+  }
 }

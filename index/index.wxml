@@ -1,1 +1,19 @@
-<view class="intro">欢迎使用代码片段，可在控制台查看代码片段的说明和文档</view>
+<!--com/homePage/index.wxml-->
+<pullDownRefresh refreshing="{{refreshing}}" refreshed="{{refreshed}}" bind:refresh="refresh">
+  <scroll-view class="container" scroll-y>
+<view class='view-page'>
+  <navbar page-name="{{title}}"></navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px)'>
+    <!--这里放你的内容-->
+    <view>
+      <button class="btn" type="primary" size="20" bindtap="_navback"> 点击跳转 </button>
+      <button class="btn" type="primary" size="20" bindtap="_refreshStsrt" catchtap='onloadStart'> 点击刷新 </button>
+        <button class="btn" type="primary" size="10" catchtap='goToScrollView'>scrollView中使用例子</button>
+         <button class="btn" type="primary" size="10" catchtap='goToSwiper'>swiper中使用例子</button>
+    </view>
+    <text>当前路径: com/homePage/index.wxml</text>
+  </view>
+</view>
+ </scroll-view>
+</pullDownRefresh>
+

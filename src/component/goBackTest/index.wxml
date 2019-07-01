@@ -3,6 +3,6 @@
   <navbar page-name="{{title}}"></navbar>
   <view class='page-content' style='height:calc(100vh - {{navH}}px)'>
     <!--这里放你的内容-->
-    <text>com/test/index.wxml</text>
+    <text>com/goBackTest/index.wxml</text>
   </view>
 </view>

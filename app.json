@@ -1,7 +1,5 @@
 {
   "pages": [
-    "com/homePage/index",
-    "com/test/index",
     "index/index"
   ],
   "window": {
