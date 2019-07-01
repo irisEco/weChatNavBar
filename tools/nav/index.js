@@ -49,7 +49,8 @@ Component({
         statusHeight: App.globalData.statusHeight,
         model: App.globalData.phoneModel,
         isHome: isHome,
-        refreshing: true
+        refreshing: true,
+        img:"/com/images/back.png"
 
       })
     }
