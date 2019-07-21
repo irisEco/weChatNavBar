@@ -32,3 +32,8 @@ page {
   background: #eee;
   text-align: center;
 }
+.test{
+  height: 100vh;
+  background: salmon;
+  width: 100%;
+}

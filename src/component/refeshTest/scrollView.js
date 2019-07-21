@@ -12,7 +12,7 @@ Page({
       title: "hello"
     })
   },
-  _navback: function () {
+  _navback: function() {
     wx.navigateTo({
       url: '../test/index'
     })
